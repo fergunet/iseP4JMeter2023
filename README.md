@@ -26,7 +26,7 @@ Docker descargará las imágenes base y construirá las nuevas imagenes para al 
 
 Accediendo con un navegador a http://\<IPDockerContainer>:3000 (ej.- http://localhost:3000) se  presenta la descripción básica de la api. Se tratan de dos métodos: 
 * /auth/login: Permite identificarse al usuario como Alumno o Administrador. El acceso a este servicio está protegido por Http BasicAuth. Una vez autenticado, se obtiene un [JWT](https://jwt.io) Token para ser empleado en el servicio de alumno. 
-* /alumnos/alumno: Devuelve el registro de calificaciones del alumno. Los administradores pueden consultar los datos de cualquier alumno. Los alumnos solo los propios. Se debe proporcionar un JWT válido (obtenido en el login) que portará la identidad (autenticación) y rol (autorización) del usuario. 
+* /students/student: Devuelve el registro de calificaciones del alumno. Los administradores pueden consultar los datos de cualquier alumno. Los alumnos solo los propios. Se debe proporcionar un JWT válido (obtenido en el login) que portará la identidad (autenticación) y rol (autorización) del usuario. 
 
 El proceso de consulta es el siguiente: 
 1. Identificarse en el servicio de login proporcionando credenciales de válidas de alumno o administrador. Obteniendo un token. 

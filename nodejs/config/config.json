@@ -3,6 +3,6 @@
   "jwtTokenSecret":"meMolaMuchoEstudiarEnLaETSII",
   "jwtTokenTTLInSecons": 3600,
   "jwtTimeJitterInSeconds":60,
-  "basicAuthLogin":"etsiiApi",
-  "basicAuthPassword":"laApiDeLaETSIIDaLache"
+  "basicAuthLogin":"batman",
+  "basicAuthPassword":"joker"
 }

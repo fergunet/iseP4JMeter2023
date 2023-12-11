@@ -6,11 +6,11 @@ const { celebrate, Joi, errors } = require('celebrate');
 
 const router = express.Router();
 
-router.use('/alumno',
+router.use('/student',
     auth.isAuthenticated
 );
 
-router.get('/alumno/:email',
+router.get('/student/:email',
     celebrate({
         params:Joi.object().keys({
             email: Joi.string().required().email()
